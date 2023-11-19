@@ -23,19 +23,19 @@ MATH:
 
 NAMESPACE LIBRARY:
     - Adding 'using namespace std' before your code
-    - You don't have to write std:: before getting input or ouput
+    - You don't have to write std:: before getting input or output
 
 */
 
-// EXCERICE:
+// EXERCISE:
 
 // 1. Write a program, that prompts for three scores, then the name of a player.
-// the program then calculates the average of the three scores and displays an appropriate message
+//The program then calculates the average of the three scores and displays an appropriate message
 
 
 
-// 2. Write a program,that prompts for two integers, 
+// 2. Write a program, that prompts for two integers, 
 // subtracts the first number from the second, then prints out their sum and difference
 
 
-// 3. Edit on tof the previous codes to use the Namespce Library
+// 3. Edit one of the previous codes to use the Namespace Library
