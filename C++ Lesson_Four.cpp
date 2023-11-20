@@ -104,7 +104,39 @@ SHORTHAND IF ELSE:
     string result = (time < 18) ? "Good day." : "Good evening.";
     cout << result;
 
-  
+SWITCH STATEMENTS:
+    - A switch statement provides an alternative syntax that is easier to read and write. 
+    - However, you are going to find these less frequently than if, else if, else in the wild.
+    EX:   
+        switch (grade) {
+          
+          case 9:
+            std::cout << "Freshman\n";
+            break;
+          case 10:
+            std::cout << "Sophomore\n";
+            break;
+          case 11:
+            std::cout << "Junior\n";
+            break;
+          case 12:
+            std::cout << "Senior\n";
+            break;
+          default:
+            std::cout << "Invalid\n";
+            break;
+        
+        }
+    
+    - The switch keyword initiates the statement and is followed by (), which contains the value that each case will compare. 
+    - In the example, the value or expression of the switch statement is grade. 
+    - Inside the block, {}, there are multiple cases.
+    - The case keyword checks if the expression matches the specified value that comes after it. 
+    - The value following the first case is 9. If the value of grade is equal to 9, then the code that follows the : would run.
+    - The break keyword tells the computer to exit the block and not execute any more code or check any other cases inside the code block.
+    - At the end of each switch statement, there is a default statement. 
+    - If none of the cases are true, then the code in the default statement will run. It’s essentially the else part in an if statement.
+      
 LOGICAL OPERATORS:
     && 	Logical and	Returns true if both statements are true	x < 5 &&  x < 10	
     || 	Logical or	Returns true if one of the statements is true	x < 5 || x < 4	
@@ -121,6 +153,14 @@ EXERCISE:
 
 
 3. Modify the answer to question 2 to have a shorthand if else
+
+
+4. Write a program that uses a switch statement to check what day of the week it is. 
+   You can get the number of the week by input or you can input it yourself. Depending on the day of the week output a message. 
+   Ex: "It is Saturday"
+
+
+
   
   
   
