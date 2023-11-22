@@ -59,5 +59,42 @@ OMIT ELEMENTS ON DECLERATION:
       string cars[5];
       cars[0] = "Volvo";
       cars[1] = "BMW";
-
+ARRAY SIZE:
+  - To get the size of an array, you can use the sizeof() operator:
+  EX:
+      int myNumbers[5] = {10, 20, 30, 40, 50};
+      cout << sizeof(myNumbers);
+      Result:
+      20
+  
+  - The code output 20 instead of 5 because the sizeof() operator returns the size of a type in bytes.
+  - We learned from the Data Types chapter that an int type is usually 4 bytes, so from the example above, 4 x 5 (4 bytes x 5 elements) = 20 bytes.
+  - To find out how many elements an array has, you have to divide the size of the array by the size of the data type it contains:
+   EX:
+      int myNumbers[5] = {10, 20, 30, 40, 50};
+      int getArrayLength = sizeof(myNumbers) / sizeof(int);
+      cout << getArrayLength;
+      Result:
+      
+      5
+LOOP THROUGH ARRAYS:
+  - In the Arrays and Loops Chapter, we wrote the size of the array in the loop condition (i < 5). 
+  - This is not ideal, since it will only work for arrays of a specified size.
+  - However, by using the sizeof() approach from the example above, we can now make loops that work for arrays of any size, which is more sustainable.
+  Instead of:
+      int myNumbers[5] = {10, 20, 30, 40, 50};
+      for (int i = 0; i < 5; i++) {
+        cout << myNumbers[i] << "\n";
+      }
+  It is better to write:
+      int myNumbers[5] = {10, 20, 30, 40, 50};
+      for (int i = 0; i < sizeof(myNumbers) / sizeof(int); i++) {
+        cout << myNumbers[i] << "\n";
+      }
+  - You can also use for-each statements  
+  EX:
+      int myNumbers[5] = {10, 20, 30, 40, 50};
+      for (int i : myNumbers) {
+        cout << i << "\n";
+      }
 
