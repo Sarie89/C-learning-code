@@ -179,6 +179,14 @@ LOOPING THROUGH A MULTI_DIMENSIONAL ARRAY:
         }
       }
     }
+EXERCISE:
+
+1. Create an array with 5 numbers then display the output with the number of elements in the array
+
+2. Write a program that receives positive integers from the user, and stores the even numbers in one list, and odd numbers in another. 
+  The program will end when the user enters -1. At this time, the program will print both lists.
+
+3. Create a random array then loop through it and print each element 
 
 
 
